@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="Black Yellow Brush Streetwear Brand Logo.png">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gradient-header {
+            background-image: linear-gradient(to bottom right, #1f2937, #0c0a09);
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-slow {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .7;
+            }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        header{
+            margin-top: -35px;
+          
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white leading-relaxed overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-header py-16 px-4 sm:px-8 lg:px-16 flex flex-col items-center text-center">
+        <!-- Logo and Nav container, responsive layout -->
+        <div class="header-container flex flex-col sm:flex-row items-center justify-between w-full max-w-7xl mb-12 sm:mb-0">
+            <a href="#" class="logo flex items-center gap-2 mb-4 sm:mb-0">
+                <img src="Black Yellow Brush Streetwear Brand Logo.png" alt="TaskFlow Logo" class="rounded-full shadow-lg" width="50px">
+                <span class="text-3xl font-bold text-yellow-400">TaskFlow</span>
+            </a>
+            <nav class="flex space-x-6 text-lg font-medium flex-wrap justify-center">
+                <a href="#features" class="hover:text-yellow-400 transition-colors">Features</a>
+                <a href="#reviews" class="hover:text-yellow-400 transition-colors">Reviews</a>
+                <a href="#pricing" class="hover:text-yellow-400 transition-colors">Pricing</a>
+            </nav>
+        </div>
+
+        <div class="mt-20 w-full max-w-3xl fade-in is-visible">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-yellow-400 text-shadow-custom">
+                Simplify Your Tasks
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl font-medium text-gray-300">
+                A tool that helps people organize their tasks with ease.
+            </p>
+            <button class="mt-8 px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 animate-pulse-slow">
+                Get Started
+            </button>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 sm:px-8 lg:px-16 text-center bg-gray-900 shadow-inner">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-12 fade-in">Features</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-10">
+            <!-- Feature 1 -->
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105 fade-in">
+                <div class="text-5xl mb-4">📝</div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Easy Task Management</h3>
+                <p class="text-gray-400">Add, edit, and delete tasks with ease.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105 fade-in" style="transition-delay: 0.2s;">
+                <div class="text-5xl mb-4">✅</div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Reminders & Notifications</h3>
+                <p class="text-gray-400">Never miss a deadline with timely alerts.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105 fade-in" style="transition-delay: 0.4s;">
+                <div class="text-5xl mb-4">💼</div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Collaborate with Team</h3>
+                <p class="text-gray-400">Share tasks and update progress with your team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="bg-gray-800 py-20 px-4 sm:px-8 lg:px-16 text-center shadow-inner">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-12 fade-in">Reviews</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-gray-700 p-8 rounded-2xl shadow-lg fade-in">
+                <p class="italic text-gray-300">"TaskFlow helped me stay on top of my work like never before!"</p>
+                <p class="font-semibold text-yellow-400 mt-4">- Jane D.</p>
+            </div>
+            <div class="bg-gray-700 p-8 rounded-2xl shadow-lg fade-in" style="transition-delay: 0.2s;">
+                <p class="italic text-gray-300">"The reminders feature is a game changer."</p>
+                <p class="font-semibold text-yellow-400 mt-4">- Mark S.</p>
+            </div>
+            <div class="bg-gray-700 p-8 rounded-2xl shadow-lg fade-in" style="transition-delay: 0.4s;">
+                <p class="italic text-gray-300">"I love how intuitive and fast this app is."</p>
+                <p class="font-semibold text-yellow-400 mt-4">- Lisa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4 sm:px-8 lg:px-16 text-center bg-gray-900">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-12 fade-in">Pricing</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-8">
+            <!-- Free Plan -->
+            <div class="bg-gray-800 p-10 rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105 fade-in">
+                <h3 class="text-2xl sm:text-3xl font-semibold mb-4 text-yellow-400">Free</h3>
+                <p class="text-3xl sm:text-4xl font-bold mb-6">$0<span class="text-lg font-normal text-gray-400">/month</span></p>
+                <ul class="text-gray-400 text-left space-y-2 mb-8">
+                    <li><span class="text-yellow-400">✓</span> Basic task management</li>
+                    <li><span class="text-yellow-400">✓</span> Personal use</li>
+                    <li><span class="text-yellow-400">✓</span> Unlimited tasks</li>
+                </ul>
+                <button class="w-full py-3 bg-yellow-400 text-gray-900 font-bold rounded-full hover:bg-yellow-500 transition-colors">
+                    Choose
+                </button>
+            </div>
+            <!-- Pro Plan -->
+            <div class="bg-yellow-400 text-gray-900 p-10 rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105 fade-in" style="transition-delay: 0.2s;">
+                <h3 class="text-2xl sm:text-3xl font-semibold mb-4">Pro</h3>
+                <p class="text-3xl sm:text-4xl font-bold mb-6">$9.99<span class="text-lg font-normal">/month</span></p>
+                <ul class="text-gray-700 text-left space-y-2 mb-8">
+                    <li><span class="text-gray-900">✓</span> Advanced features</li>
+                    <li><span class="text-gray-900">✓</span> Reminders & alerts</li>
+                    <li><span class="text-gray-900">✓</span> Priority support</li>
+                </ul>
+                <button class="w-full py-3 bg-gray-900 text-yellow-400 font-bold rounded-full hover:bg-gray-800 transition-colors">
+                    Choose
+                </button>
+            </div>
+            <!-- Team Plan -->
+            <div class="bg-gray-800 p-10 rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105 fade-in" style="transition-delay: 0.4s;">
+                <h3 class="text-2xl sm:text-3xl font-semibold mb-4 text-yellow-400">Team</h3>
+                <p class="text-3xl sm:text-4xl font-bold mb-6">$29.99<span class="text-lg font-normal text-gray-400">/month</span></p>
+                <ul class="text-gray-400 text-left space-y-2 mb-8">
+                    <li><span class="text-yellow-400">✓</span> Collaboration tools</li>
+                    <li><span class="text-yellow-400">✓</span> Upto 10 users</li>
+                    <li><span class="text-yellow-400">✓</span> All Pro features</li>
+                </ul>
+                <button class="w-full py-3 bg-yellow-400 text-gray-900 font-bold rounded-full hover:bg-yellow-500 transition-colors">
+                    Choose
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 py-12 px-4 sm:px-8 lg:px-16 text-center border-t border-gray-700">
+        <h2 class="text-xl sm:text-2xl font-bold mb-4">Contact Us</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="https://facebook.com" target="_blank" class="hover:opacity-75 transition-opacity">
+                <img src="facebook.png" alt="Facebook" width="40" class="rounded-full">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="hover:opacity-75 transition-opacity">
+                <img src="instagram.png" alt="Instagram" width="40" class="rounded-full">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="hover:opacity-75 transition-opacity">
+                <img src="twitter.png" alt="Twitter" width="40" class="rounded-full">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for adding "fade-in on scroll" effect
+        const elements = document.querySelectorAll('.fade-in');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+    
+</body>
+</html>
